@@ -1,0 +1,23 @@
+
+    <header> <h1>HELLO </h1></header>
+   
+<main>
+    <div>
+        <h2>How are you doing today?</h2>
+        <p>Perform What action you want to perform</p>
+        <form action="/redirect" method="post"><button>add</button></form>
+        <form action="/add" method="post">
+            <label for="name">Enter name</label>
+            <input type="text" name="name" id="name">
+            <label for="dept">Enter Department</label>
+            <input type="text" name="dept" id="dept">
+            <input type="submit" value="Submit">
+        </form>
+        <%if(locals.NAME){%>
+        <div>NAME:<%= NAME %><br>DEPARTMENT:<%=DEPARTMENT %></div>
+        <% }%>
+        
+             
+    </div>
+</main>
+
